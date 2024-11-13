@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Stats-preview-card-component solution](https://github.com/Gideon-w/3-column-preview-card-component)
-- Live Site URL: [Stats-preview-card-component](https://gideon-w.github.io/3-column-preview-card-component/)
+- Solution URL: [3-column preview card component solution](https://github.com/Gideon-w/3-column-preview-card-component)
+- Live Site URL: [3-column preview card component](https://gideon-w.github.io/3-column-preview-card-component/)
 
 ### Built with
 
