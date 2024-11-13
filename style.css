@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+:root {
+  /**** Colors *****/
+  --Primary-Bright-Orange: hsl(31, 77%, 52%);
+  --Primary-Dark-Cyan: hsl(184, 100%, 22%);
+  --Primary-Very-Dark-Cyan: hsl(179, 100%, 13%);
+
+  --Neutral-Transparent-White: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --Neutral-Very-Light-Gray: hsl(
+    0,
+    0%,
+    95%
+  ); /* (background, headings, buttons) */
+
+  /**** Typography *****/
+  --FontWeight-Bold: 700;
+  --FontWeight-Light: 400;
+  --Font-Size: 1.5rem;
+  --FontFamily-Big: "Big Shoulders Display", sans-serif;
+  --FontFamily-Lex: "Lexend Deca", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+  padding: 3.2rem 2.4rem;
+  background-color: var(--Neutral-Very-Light-Gray);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+}
+@media (min-width: 43.75em) {
+  .wrapper {
+    max-width: 75rem;
+    flex-direction: row;
+  }
+}
+.sedans,
+.suv,
+.luxury {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+  padding: 3.2rem 4rem;
+}
+.sedans h2,
+.suv h2,
+.luxury h2 {
+  font-family: var(--FontFamily-Big);
+  font-weight: var(--FontWeight-Bold);
+  font-size: 3.2rem;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: var(--Neutral-Very-Light-Gray);
+}
+.sedans p,
+.suv p,
+.luxury p {
+  font-family: var(--FontFamily-Lex);
+  font-weight: var(--FontWeight-Light);
+  font-size: var(--Font-Size);
+  color: var(--Neutral-Transparent-White);
+  line-height: 1.6;
+}
+.sedans {
+  background-color: var(--Primary-Bright-Orange);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+@media (min-width: 43.75em) {
+  .sedans {
+    border-radius: 0;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+}
+.sedans a:link,
+.sedans a:visited {
+  border: 2px solid var(--Primary-Bright-Orange);
+  color: var(--Primary-Bright-Orange);
+}
+
+.suv {
+  background-color: var(--Primary-Dark-Cyan);
+}
+.suv a:link,
+.suv a:visited {
+  border: 2px solid var(--Primary-Dark-Cyan);
+  color: var(--Primary-Dark-Cyan);
+}
+
+.luxury {
+  background-color: var(--Primary-Very-Dark-Cyan);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+@media (min-width: 43.75em) {
+  .luxury {
+    border-radius: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+}
+.luxury a:link,
+.luxury a:visited {
+  border: 2px solid var(--Primary-Very-Dark-Cyan);
+  color: var(--Primary-Very-Dark-Cyan);
+}
+
+.wrapper a:link,
+.wrapper a:visited {
+  font-family: var(--FontFamily-Lex);
+  font-size: var(--Font-Size);
+  font-weight: var(--FontWeight-Light);
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--Neutral-Very-Light-Gray);
+  border-radius: 2.4rem;
+  padding: 1rem 2.4rem;
+}
+.wrapper a:hover,
+.wrapper a:active {
+  color: var(--Neutral-Very-Light-Gray);
+  border: 2px solid var(--Neutral-Very-Light-Gray);
+  background-color: transparent;
+}
+/*=====================================
+=            Footer Styles            =
+=====================================*/
+.mentor {
+  font-family: var(--FontFamily-Big);
+  font-size: 1.6rem;
+}
+.coder {
+  font-family: var(--FontFamily-Lex);
+  font-size: var(--Font-Size);
+  font-style: italic;
+}
+.attribution,
+.attribution a:link {
+  color: var(--Neutral-White-MainHeading);
+  text-decoration: none;
+  padding-left: 0.8rem;
+}
+.coder a:link {
+  font-weight: var(--FontWeight-Bold);
+  text-decoration: underline;
+  line-height: 1.6;
+}
+.attribution a:visited {
+  color: var(--Primary-Very-Dark-Cyan);
+}
+.attribution a:hover {
+  color: var(--Primary-Dark-Cyan);
+  text-decoration: underline;
+}
+.coder a:hover {
+  font-weight: var(--FontWeight-Bold);
+  text-decoration: none;
+}
+.attribution a:active {
+  color: var(--Primary-Bright-Orange);
+}
